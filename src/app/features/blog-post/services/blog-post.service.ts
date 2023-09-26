@@ -34,4 +34,10 @@ export class BlogPostService {
   deleteBlogPost(id: string) : Observable<Boolean> {
     return this.http.delete<Boolean>(`${environment.apiBaseUrl}/api/blogposts/${id}`);
   }
+
+  getBlogPostByUrlHandle(urlHandle: string) : Observable<BlogPost> {
+    console.log(`${environment.apiBaseUrl}/api/blogposts/${urlHandle}`)
+    return this.http.get<BlogPost>(`${environment.apiBaseUrl}/api/blogposts/${urlHandle}`);
+  }
+
 }
