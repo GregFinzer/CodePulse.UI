@@ -3,28 +3,71 @@ Angular UI for learning Angular
 
 From Udemy course here:  https://www.udemy.com/course/real-world-app-angular-aspnet-core-web-api-and-sql/
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.3.
+***You must also download and setup this project:***  https://github.com/GregFinzer/CodePulse.API
 
-## Development server
+## Development Environment Setup for the UI
+### Install the LTS Version of Node
+https://nodejs.org
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Or install with Chocolatey
+```dos
+choco install nodejs-lts
+```
 
-## Code scaffolding
+## Install the Angular CLI
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+At the command prompt
+```dos
+npm install -g @angular/cli
+```
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Install VS Code
+https://code.visualstudio.com/
 
-## Running unit tests
+Or install with Chocolatey
+```dos
+choco install vscode
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Install VS Code Extensions
+* ESLint:  https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint
+* Angular Snippets (Version 16):  https://marketplace.visualstudio.com/items?itemName=johnpapa.Angular2
+* CSS Formatter:  https://marketplace.visualstudio.com/items?itemName=aeschli.vscode-css-formatter
+* Angular Language Service: https://marketplace.visualstudio.com/items?itemName=Angular.ng-template
+* IntelliSense for CSS class names in HTML:  https://marketplace.visualstudio.com/items?itemName=Zignd.html-css-class-completion
+* Path Intellisense:  https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense
 
-## Running end-to-end tests
+Or install on the command line
+```dos
+call "C:\Program Files\Microsoft VS Code\bin\code" --install-extension dbaeumer.vscode-eslint
+call "C:\Program Files\Microsoft VS Code\bin\code" --install-extension johnpapa.Angular2
+call "C:\Program Files\Microsoft VS Code\bin\code" --install-extension aeschli.vscode-css-formatter
+call "C:\Program Files\Microsoft VS Code\bin\code" --install-extension Angular.ng-template
+call "C:\Program Files\Microsoft VS Code\bin\code" --install-extension Zignd.html-css-class-completion
+call "C:\Program Files\Microsoft VS Code\bin\code" --install-extension christian-kohler.path-intellisense
+```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### Restore the Node Modules
+Go to where you have cloned the UI project and execute this on the command line:
+```dos
+npm install
+```
 
-## Further help
+## Running the Application
+* Setup the API project following the ReadMe File:  https://github.com/GregFinzer/CodePulse.API
+* Run the API project in Visual Studio
+* On the command line:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```dos
+ng serve --open
+```
+
+**Admin User**
+
+User Name: admin@codepulse.com
+
+Password:  Password1!
+
+
+
